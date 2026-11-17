@@ -1,0 +1,26 @@
+{
+    "name": "techbaripress/laravel",
+    "description": "News Bridge for Laravel: one command installs the connector that receives auto-posts, serves the e-paper / ID verification / job-application pages and sends new posts to photocard + social auto-post.",
+    "type": "library",
+    "license": "proprietary",
+    "keywords": ["laravel", "news", "bridge", "auto-post", "epaper"],
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
+        "illuminate/console": "^8.0|^9.0|^10.0|^11.0|^12.0",
+        "illuminate/http": "^8.0|^9.0|^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NewsBridge\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NewsBridge\\Laravel\\NewsBridgeServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
